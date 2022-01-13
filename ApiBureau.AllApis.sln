@@ -9,7 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiBureau.CloudCall.Api.Con
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiBureau.Confluence.Api", "..\confluence-api\src\ApiBureau.Confluence.Api\ApiBureau.Confluence.Api.csproj", "{E0DC67E8-EC51-4ECC-8D06-1C9F3D448C22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiBureau.AllApis.Console", "src\ApiBureau.AllApis.Console\ApiBureau.AllApis.Console.csproj", "{9BB5A413-997B-4451-BD03-71D4A0E4F1BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiBureau.AllApis.Console", "src\ApiBureau.AllApis.Console\ApiBureau.AllApis.Console.csproj", "{9BB5A413-997B-4451-BD03-71D4A0E4F1BC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "postman", "postman", "{EF2F6820-0FB6-41CB-B370-80117B16AB9C}"
+	ProjectSection(SolutionItems) = preProject
+		..\cloudcall-api\postman\Cloud Call.postman_collection.json = ..\cloudcall-api\postman\Cloud Call.postman_collection.json
+		..\confluence-api\postman\Confluence.postman_collection.json = ..\confluence-api\postman\Confluence.postman_collection.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

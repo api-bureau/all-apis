@@ -23,7 +23,7 @@ public class DataService
 
         _logger.LogInformation($"Items: {spaceResultDto.Results.Count}");
 
-        var spacePagesResultDto = await _confluenceClient.GetSpacePagesAsync("");
+        var spacePagesResultDto = await _confluenceClient.GetSpaceContentsAsync("");
 
         _logger.LogInformation($"Items: {spacePagesResultDto.Results.Count}");
     }
