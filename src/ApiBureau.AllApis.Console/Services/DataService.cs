@@ -23,9 +23,9 @@ public class DataService
 
         _logger.LogInformation($"Items: {spaceResultDto.Results.Count}");
 
-        var spacePagesResultDto = await _confluenceClient.GetSpaceContentsAsync("");
+        var spacePagesResultDto = await _confluenceClient.GetSpaceContentAsync("");
 
-        _logger.LogInformation($"Items: {spacePagesResultDto.Results.Count}");
+        _logger.LogInformation($"Items: {spacePagesResultDto.Count}");
     }
 
     public async Task GetStatusAsync()
