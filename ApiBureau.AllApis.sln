@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "postman", "postman", "{EF2F
 		..\confluence-api\postman\Confluence.postman_collection.json = ..\confluence-api\postman\Confluence.postman_collection.json
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiBureau.SharePoint.Api", "..\sharepoint-api\src\ApiBureau.SharePoint.Api\ApiBureau.SharePoint.Api.csproj", "{5511BE68-35B6-44CA-928C-2E90CEC79E2E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{9BB5A413-997B-4451-BD03-71D4A0E4F1BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BB5A413-997B-4451-BD03-71D4A0E4F1BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BB5A413-997B-4451-BD03-71D4A0E4F1BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5511BE68-35B6-44CA-928C-2E90CEC79E2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5511BE68-35B6-44CA-928C-2E90CEC79E2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5511BE68-35B6-44CA-928C-2E90CEC79E2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5511BE68-35B6-44CA-928C-2E90CEC79E2E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
