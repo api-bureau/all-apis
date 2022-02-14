@@ -15,15 +15,17 @@ public class DataService
 
     public async Task GetConfluneceSpacesAsync()
     {
-        var dto = await _confluenceClient.GetContentAsync(0);
+        //var dto = await _confluenceClient.GetContentAsync(0);
 
-        _logger.LogInformation(dto?.Body.View.Value);
+        //_logger.LogInformation(dto?.Body.View.Value);
 
         var spaceResultDto = await _confluenceClient.GetSpaceAsync();
 
         _logger.LogInformation($"Items: {spaceResultDto.Results.Count}");
 
-        var spacePagesResultDto = await _confluenceClient.GetSpaceContentAsync("");
+        var expand = new SpaceExpand().AddBody().AddVersion().AddAncestors().AddChildren();
+
+        var spacePagesResultDto = await _confluenceClient.GetSpaceContentAsync("", expand);
 
         _logger.LogInformation($"Items: {spacePagesResultDto.Count}");
     }
