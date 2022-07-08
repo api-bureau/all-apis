@@ -19,13 +19,13 @@ public class DataService
 
         //_logger.LogInformation(dto?.Body.View.Value);
 
-        var spaceResultDto = await _confluenceClient.GetSpaceAsync();
+        var spaceResultDto = await _confluenceClient.Spaces.GetAsync();
 
         _logger.LogInformation($"Items: {spaceResultDto.Results.Count}");
 
         var expand = new SpaceExpand().AddBody().AddVersion().AddAncestors().AddChildren();
 
-        var spacePagesResultDto = await _confluenceClient.GetSpaceContentAsync("", expand);
+        var spacePagesResultDto = await _confluenceClient.Spaces.GetContentAsync("", expand);
 
         _logger.LogInformation($"Items: {spacePagesResultDto.Count}");
     }
