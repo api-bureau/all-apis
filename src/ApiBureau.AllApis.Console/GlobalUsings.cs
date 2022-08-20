@@ -7,5 +7,5 @@ global using ApiBureau.Confluence.Api.Core;
 global using ApiBureau.Confluence.Api.Extensions;
 global using Microsoft.Extensions.Configuration;
 global using Microsoft.Extensions.DependencyInjection;
-global using Microsoft.Extensions.Logging.Configuration;
 global using Microsoft.Extensions.Logging;
+global using Microsoft.Extensions.Logging.Configuration;
