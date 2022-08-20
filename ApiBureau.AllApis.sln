@@ -22,11 +22,18 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2A8FA81E-158C-444E-97E3-3DCCBFD15E82}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Emsi.Api", "..\emsi-api\src\Emsi.Api\Emsi.Api.csproj", "{F2D9F03F-497A-4728-8958-EEFB735DAF9B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Emsi.Api.Console", "..\emsi-api\src\Emsi.Api.Console\Emsi.Api.Console.csproj", "{801D6C94-4235-4A88-9EF7-3CC451AD7FBE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Emsi.Data", "..\emsi-api\src\Emsi.Data\Emsi.Data.csproj", "{88034C9F-3FB2-4AB4-AFD3-B63A11AF2218}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Emsi.Playground", "..\emsi-api\src\Emsi.Playground\Emsi.Playground.csproj", "{9BDA9E5D-8D6F-4471-B303-FC090FC7E773}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Emsi.Web.ApiDashboard", "..\emsi-api\src\Emsi.Web.ApiDashboard\Emsi.Web.ApiDashboard.csproj", "{94B527F7-5599-4CFE-B2A5-B1C0D3BE8926}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -62,6 +69,18 @@ Global
 		{801D6C94-4235-4A88-9EF7-3CC451AD7FBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{801D6C94-4235-4A88-9EF7-3CC451AD7FBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{801D6C94-4235-4A88-9EF7-3CC451AD7FBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88034C9F-3FB2-4AB4-AFD3-B63A11AF2218}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88034C9F-3FB2-4AB4-AFD3-B63A11AF2218}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88034C9F-3FB2-4AB4-AFD3-B63A11AF2218}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88034C9F-3FB2-4AB4-AFD3-B63A11AF2218}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BDA9E5D-8D6F-4471-B303-FC090FC7E773}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BDA9E5D-8D6F-4471-B303-FC090FC7E773}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BDA9E5D-8D6F-4471-B303-FC090FC7E773}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BDA9E5D-8D6F-4471-B303-FC090FC7E773}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94B527F7-5599-4CFE-B2A5-B1C0D3BE8926}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94B527F7-5599-4CFE-B2A5-B1C0D3BE8926}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94B527F7-5599-4CFE-B2A5-B1C0D3BE8926}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94B527F7-5599-4CFE-B2A5-B1C0D3BE8926}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
