@@ -1,3 +1,5 @@
+using System.Text.Json;
+
 namespace ApiBureau.AllApis.Console.Services;
 
 public class DataService
@@ -30,16 +32,15 @@ public class DataService
         _logger.LogInformation($"Items: {spacePagesResultDto.Count}");
     }
 
-    public async Task GetStatusAsync()
+    public async Task GetCloudCallAccuontsAsync()
     {
-        //var dto = await _cloudCallClient.Skills.GetStatusAsync();
+        var items = await _cloudCallClient.Accounts.GetAsync();
 
-        //if (dto.IsSuccess)
-        //{
-        //    var status = dto.Data!;
+        _logger.LogInformation("Items: {items}", items.Count);
 
-        //    _logger.LogInformation(status.Healthy.ToString());
-        //    _logger.LogInformation(status.Message);
-        //}
+        if (items.Count > 0)
+        {
+            _logger.LogInformation("Example {0}", JsonSerializer.Serialize(items[0]));
+        }
     }
 }

@@ -1,11 +1,9 @@
 global using ApiBureau.AllApis.Console.Services;
 global using ApiBureau.CloudCall.Api;
-global using ApiBureau.CloudCall.Api.Console;
 global using ApiBureau.CloudCall.Api.Extensions;
 global using ApiBureau.Confluence.Api;
 global using ApiBureau.Confluence.Api.Core;
 global using ApiBureau.Confluence.Api.Extensions;
-global using Microsoft.Extensions.Configuration;
 global using Microsoft.Extensions.DependencyInjection;
+global using Microsoft.Extensions.Hosting;
 global using Microsoft.Extensions.Logging;
-global using Microsoft.Extensions.Logging.Configuration;

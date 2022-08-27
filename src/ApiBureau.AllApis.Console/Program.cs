@@ -1,13 +1,18 @@
-var services = new ServiceCollection();
+var hostBuilder = Host.CreateDefaultBuilder(args)
+        .ConfigureServices((context, services) =>
+        {
+            services.AddCloudCall(context.Configuration);
+            services.AddConfluence(context.Configuration);
+            services.AddScoped<DataService>();
+        }).Build();
 
-var startup = new Startup();
+var serviceScopeFactory = hostBuilder.Services.GetService<IServiceScopeFactory>();
 
-startup.ConfigureServices(services);
+using var scope = serviceScopeFactory?.CreateScope();
 
-var serviceProvider = services.BuildServiceProvider();
+var service = scope?.ServiceProvider.GetService<DataService>();
 
-var dataService = serviceProvider.GetService<DataService>()
-    ?? throw new ArgumentNullException($"{nameof(DataService)} cannot be null");
+if (service == null) return;
 
-await dataService.GetStatusAsync();
-await dataService.GetConfluneceSpacesAsync();
+await service.GetCloudCallAccuontsAsync();
+//await dataService.GetConfluneceSpacesAsync();

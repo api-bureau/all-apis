@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ApiBureau.AllApis.Console": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
