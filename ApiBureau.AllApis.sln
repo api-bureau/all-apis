@@ -35,7 +35,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Emsi.Playground", "..\emsi-
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Emsi.Web.ApiDashboard", "..\emsi-api\src\Emsi.Web.ApiDashboard\Emsi.Web.ApiDashboard.csproj", "{94B527F7-5599-4CFE-B2A5-B1C0D3BE8926}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiBureau.Edays.Api", "..\e-days-api\src\ApiBureau.Edays.Api\ApiBureau.Edays.Api.csproj", "{4A7F24C3-8432-44F8-9C10-63F36D5149E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiBureau.Edays.Api", "..\e-days-api\src\ApiBureau.Edays.Api\ApiBureau.Edays.Api.csproj", "{4A7F24C3-8432-44F8-9C10-63F36D5149E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiBureau.Sportmonks.Api", "..\sportmonks-api\src\ApiBureau.Sportmonks.Api\ApiBureau.Sportmonks.Api.csproj", "{510EB1F3-C213-4CA8-B910-830D8413A063}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{4A7F24C3-8432-44F8-9C10-63F36D5149E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A7F24C3-8432-44F8-9C10-63F36D5149E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A7F24C3-8432-44F8-9C10-63F36D5149E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{510EB1F3-C213-4CA8-B910-830D8413A063}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{510EB1F3-C213-4CA8-B910-830D8413A063}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{510EB1F3-C213-4CA8-B910-830D8413A063}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{510EB1F3-C213-4CA8-B910-830D8413A063}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
