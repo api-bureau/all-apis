@@ -1,48 +1,16 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<NDepend AppName="ApiBureau.AllApis" Platform="DotNet" FileWrittenByProductVersion="2022.1.4.9655">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<NDepend AppName="ApiBureau.AllApis" Platform="DotNet" FileWrittenByProductVersion="2022.2.1.9665">
   <OutputDir KeepXmlFiles="False">.\NDependOut</OutputDir>
   <IDEFiles>
-    <IDEFile FilePath=".\ApiBureau.AllApis.sln" Filters="-test -sharepoint -confluence" Configuration="DEBUG|AnyCPU">
+    <IDEFile FilePath=".\ApiBureau.AllApis.sln" Filters="-test -sharepoint -confluence -emsi -cloud -sport -eday -allapis" Configuration="DEBUG|AnyCPU">
       <RootDirResolvingInfo Enabled="False" Hints="Debug|bin|.bin|b|AnyCPU|x64|x86|v*.*|net*" TimeOut="10">
         <RootDir>.</RootDir>
       </RootDirResolvingInfo>
     </IDEFile>
   </IDEFiles>
+  <RuntimeProfileDesc>.NET 6.0</RuntimeProfileDesc>
   <Assemblies />
-  <FrameworkAssemblies>
-    <Name>System.Runtime</Name>
-    <Name>Microsoft.Extensions.Configuration.UserSecrets</Name>
-    <Name>System.Text.Json</Name>
-    <Name>System.Net.Http</Name>
-    <Name>Microsoft.Extensions.Options</Name>
-    <Name>Microsoft.Extensions.DependencyInjection.Abstractions</Name>
-    <Name>Microsoft.Extensions.Configuration.Abstractions</Name>
-    <Name>Polly</Name>
-    <Name>System.Collections</Name>
-    <Name>IdentityModel</Name>
-    <Name>Microsoft.Extensions.Http</Name>
-    <Name>Microsoft.Extensions.Http.Polly</Name>
-    <Name>Microsoft.Extensions.Configuration.Binder</Name>
-    <Name>System.Net.Http.Json</Name>
-    <Name>Microsoft.Extensions.DependencyInjection</Name>
-    <Name>Microsoft.Extensions.Logging</Name>
-    <Name>Microsoft.Extensions.Logging.Abstractions</Name>
-    <Name>Microsoft.Extensions.Configuration</Name>
-    <Name>Microsoft.Extensions.Configuration.Json</Name>
-    <Name>Microsoft.Extensions.Configuration.EnvironmentVariables</Name>
-    <Name>Microsoft.Extensions.Logging.Configuration</Name>
-    <Name>Microsoft.Extensions.Logging.Console</Name>
-    <Name>System.ComponentModel</Name>
-    <Name>System.Linq</Name>
-    <Name>ApiBureau.Confluence.Api</Name>
-  </FrameworkAssemblies>
-  <Dirs>
-    <Dir>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.6</Dir>
-    <Dir>C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\6.0.6</Dir>
-    <Dir>C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\6.0.6</Dir>
-    <Dir>C:\Program Files\dotnet\sdk\NuGetFallbackFolder</Dir>
-    <Dir>C:\Users\Vacla\.nuget\packages</Dir>
-  </Dirs>
+  <Dirs />
   <MergeCodeGeneratedByCompiler>True</MergeCodeGeneratedByCompiler>
   <ZipSourceFiles>True</ZipSourceFiles>
   <Report Kind="0" SectionsEnabled="110591" XslPath="" Flags="261120" NbItemsToUnfold="5" />
@@ -81,12 +49,13 @@
       <Serie MetricName="Annual Interest (Metric)" MetricUnit="man-days" Color="#FFFF8C00" ChartType="Line" ScaleExp="0" />
     </Chart>
   </TrendMetrics>
+  <GitHub Account="" Repo="" />
   <HistoricAnalysisResult PersistRecurrence="3" UseCustomDir="False" CustomDir="" />
   <SourceFileRebasing FromPath="" ToPath="" />
   <PathVariables />
   <RuleFiles />
   <GraphFiles />
-  <ProjectRules AreActive="True" />
+  <ProjectRules AreActive="True" QueryPersistenceKind="PersistOnlyQueryIdForUntouchedQueries" />
   <ProjectDebtSettings DebtSettingsStorage="0" SettingsFilePath="">
     <DebtSettings>
       <DebtFactor>1</DebtFactor>
@@ -109,8 +78,7 @@
       <High2Critical_SeverityThreshold>72000000000</High2Critical_SeverityThreshold>
       <Critical2Blocker_SeverityThreshold>360000000000</Critical2Blocker_SeverityThreshold>
     </DebtSettings>
-  </ProjectDebtSettings>
-  <Queries>
+  </ProjectDebtSettings><Queries>
     <Group Name="Quality Gates" Active="True" ShownInReport="False">
       <Query Active="True" DisplayList="True" DisplayStat="False" DisplaySelectionView="False" IsCriticalRule="False"><![CDATA[// <Name>Quality Gates Evolution</Name>
 from qg in QualityGates
@@ -13079,5 +13047,4 @@ select new {
 //</HowToFix>]]></Query>
       </Group>
     </Group>
-  </Queries>
-</NDepend>
+  </Queries></NDepend>
