@@ -48,6 +48,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiBureau.Bullhorn.Browser"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiBureau.Confluence.Api.Console", "..\confluence-api\src\ApiBureau.Confluence.Api.Console\ApiBureau.Confluence.Api.Console.csproj", "{EBBD6270-9646-41CD-88D6-8DA2C7C22445}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiBureau.JPMorgan.Api", "..\jpmorgan-api\src\ApiBureau.JPMorgan.Api\ApiBureau.JPMorgan.Api.csproj", "{1640904A-5836-1C01-980C-4B5C7A03B8F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiBureau.JPMorgan.Api.Console", "..\jpmorgan-api\src\ApiBureau.JPMorgan.Api.Console\ApiBureau.JPMorgan.Api.Console.csproj", "{09984C20-80B7-8684-0CAA-ADC92B3DBDC3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -118,6 +122,14 @@ Global
 		{EBBD6270-9646-41CD-88D6-8DA2C7C22445}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBBD6270-9646-41CD-88D6-8DA2C7C22445}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBBD6270-9646-41CD-88D6-8DA2C7C22445}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1640904A-5836-1C01-980C-4B5C7A03B8F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1640904A-5836-1C01-980C-4B5C7A03B8F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1640904A-5836-1C01-980C-4B5C7A03B8F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1640904A-5836-1C01-980C-4B5C7A03B8F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09984C20-80B7-8684-0CAA-ADC92B3DBDC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09984C20-80B7-8684-0CAA-ADC92B3DBDC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09984C20-80B7-8684-0CAA-ADC92B3DBDC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09984C20-80B7-8684-0CAA-ADC92B3DBDC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
