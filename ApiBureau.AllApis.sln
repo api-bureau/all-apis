@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.32014.148
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11018.127 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiBureau.CloudCall.Api", "..\cloudcall-api\src\ApiBureau.CloudCall.Api\ApiBureau.CloudCall.Api.csproj", "{1A82BFCA-11FE-4287-A710-B3F2201AE62B}"
 EndProject
@@ -52,6 +52,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiBureau.JPMorgan.Api", "..\jpmorgan-api\src\ApiBureau.JPMorgan.Api\ApiBureau.JPMorgan.Api.csproj", "{1640904A-5836-1C01-980C-4B5C7A03B8F0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiBureau.JPMorgan.Api.Console", "..\jpmorgan-api\src\ApiBureau.JPMorgan.Api.Console\ApiBureau.JPMorgan.Api.Console.csproj", "{09984C20-80B7-8684-0CAA-ADC92B3DBDC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiBureau.Ringover.Api", "..\ringover-api\src\ApiBureau.Ringover.Api\ApiBureau.Ringover.Api.csproj", "{B86A1A31-1BEC-AD05-D186-A73142D5D536}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -131,6 +133,10 @@ Global
 		{09984C20-80B7-8684-0CAA-ADC92B3DBDC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09984C20-80B7-8684-0CAA-ADC92B3DBDC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09984C20-80B7-8684-0CAA-ADC92B3DBDC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B86A1A31-1BEC-AD05-D186-A73142D5D536}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B86A1A31-1BEC-AD05-D186-A73142D5D536}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B86A1A31-1BEC-AD05-D186-A73142D5D536}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B86A1A31-1BEC-AD05-D186-A73142D5D536}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
