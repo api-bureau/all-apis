@@ -15,6 +15,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\..\bullhorn-api\src\ApiBureau.Bullhorn.Api\ApiBureau.Bullhorn.Api.csproj" />
       <ProjectReference Include="..\..\..\cloudcall-api\src\ApiBureau.CloudCall.Api\ApiBureau.CloudCall.Api.csproj" />
       <ProjectReference Include="..\..\..\confluence-api\src\ApiBureau.Confluence.Api\ApiBureau.Confluence.Api.csproj" />
     </ItemGroup>
