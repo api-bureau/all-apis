@@ -1,0 +1,34 @@
+<Solution>
+  <Folder Name="/postman/">
+    <File Path="../cloudcall-api/postman/Cloud Call.postman_collection.json" />
+    <File Path="../confluence-api/postman/Confluence.postman_collection.json" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path="../bullhorn-api/README.md" />
+    <File Path="../emsi-api/README.md" />
+    <File Path=".gitignore" />
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="../bullhorn-api/src/ApiBureau.Bullhorn.Api.Console/ApiBureau.Bullhorn.Api.Console.csproj" />
+  <Project Path="../bullhorn-api/src/ApiBureau.Bullhorn.Api/ApiBureau.Bullhorn.Api.csproj" />
+  <Project Path="../bullhorn-api/src/ApiBureau.Bullhorn.Browser/ApiBureau.Bullhorn.Browser.csproj" />
+  <Project Path="../cloudcall-api/src/ApiBureau.CloudCall.Api.Console/ApiBureau.CloudCall.Api.Console.csproj" />
+  <Project Path="../cloudcall-api/src/ApiBureau.CloudCall.Api/ApiBureau.CloudCall.Api.csproj" />
+  <Project Path="../confluence-api/src/ApiBureau.Confluence.Api.Console/ApiBureau.Confluence.Api.Console.csproj" />
+  <Project Path="../confluence-api/src/ApiBureau.Confluence.Api/ApiBureau.Confluence.Api.csproj" />
+  <Project Path="../devyce-api/src/ApiBureau.Devyce.Api.Console/ApiBureau.Devyce.Api.Console.csproj" />
+  <Project Path="../devyce-api/src/ApiBureau.Devyce.Api/ApiBureau.Devyce.Api.csproj" />
+  <Project Path="../e-days-api/src/ApiBureau.Edays.Api/ApiBureau.Edays.Api.csproj" />
+  <Project Path="../emsi-api/src/Emsi.Api.Console/Emsi.Api.Console.csproj" />
+  <Project Path="../emsi-api/src/Emsi.Api/Emsi.Api.csproj" />
+  <Project Path="../emsi-api/src/Emsi.Data/Emsi.Data.csproj" />
+  <Project Path="../emsi-api/src/Emsi.Playground/Emsi.Playground.csproj" />
+  <Project Path="../emsi-api/src/Emsi.Web.ApiDashboard/Emsi.Web.ApiDashboard.csproj" />
+  <Project Path="../jpmorgan-api/src/ApiBureau.JPMorgan.Api.Console/ApiBureau.JPMorgan.Api.Console.csproj" />
+  <Project Path="../jpmorgan-api/src/ApiBureau.JPMorgan.Api/ApiBureau.JPMorgan.Api.csproj" />
+  <Project Path="../ringover-api/src/ApiBureau.Ringover.Api.Console/ApiBureau.Ringover.Api.Console.csproj" />
+  <Project Path="../ringover-api/src/ApiBureau.Ringover.Api/ApiBureau.Ringover.Api.csproj" />
+  <Project Path="../sharepoint-api/src/ApiBureau.SharePoint.Api/ApiBureau.SharePoint.Api.csproj" />
+  <Project Path="../sportmonks-api/src/ApiBureau.Sportmonks.Api/ApiBureau.Sportmonks.Api.csproj" />
+  <Project Path="src/ApiBureau.AllApis.Console/ApiBureau.AllApis.Console.csproj" />
+</Solution>
