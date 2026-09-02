@@ -15,21 +15,21 @@ public class DataService
         _logger = logger;
     }
 
-    public async Task GetConfluneceSpacesAsync()
+    public async Task GetConfluenceSpacesAsync()
     {
-        //var dto = await _confluenceClient.GetContentAsync(0);
+        var spaces = await _confluenceClient.Spaces.GetAllAsync();
 
-        //_logger.LogInformation(dto?.Body.View.Value);
+        _logger.LogInformation("Spaces: {Count}", spaces.Count);
 
-        var spaceResultDto = await _confluenceClient.Spaces.GetAsync();
+        var space = spaces.FirstOrDefault();
+        if (space is null)
+        {
+            return;
+        }
 
-        _logger.LogInformation($"Items: {spaceResultDto.Results.Count}");
+        var pages = await _confluenceClient.Pages.GetAllForSpaceAsync(space.Id);
 
-        var expand = new SpaceExpand().AddBody().AddVersion().AddAncestors().AddChildren();
-
-        var spacePagesResultDto = await _confluenceClient.Spaces.GetContentAsync("", expand);
-
-        _logger.LogInformation($"Items: {spacePagesResultDto.Count}");
+        _logger.LogInformation("Pages in {SpaceName}: {Count}", space.Name, pages.Count);
     }
 
     public async Task GetCloudCallAccuontsAsync()

@@ -16,8 +16,6 @@
   <Project Path="../cloudcall-api/src/ApiBureau.CloudCall.Api/ApiBureau.CloudCall.Api.csproj" />
   <Project Path="../confluence-api/src/ApiBureau.Confluence.Api.Console/ApiBureau.Confluence.Api.Console.csproj" />
   <Project Path="../confluence-api/src/ApiBureau.Confluence.Api/ApiBureau.Confluence.Api.csproj" />
-  <Project Path="../confluence-api/src/ApiBureau.Confluence.ApiV2.Console/ApiBureau.Confluence.ApiV2.Console.csproj" />
-  <Project Path="../confluence-api/src/ApiBureau.Confluence.ApiV2/ApiBureau.Confluence.ApiV2.csproj" />
   <Project Path="../devyce-api/src/ApiBureau.Devyce.Api.Console/ApiBureau.Devyce.Api.Console.csproj" />
   <Project Path="../devyce-api/src/ApiBureau.Devyce.Api/ApiBureau.Devyce.Api.csproj" />
   <Project Path="../e-days-api/src/ApiBureau.Edays.Api/ApiBureau.Edays.Api.csproj" />
