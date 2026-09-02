@@ -14,5 +14,5 @@ var service = scope?.ServiceProvider.GetService<DataService>();
 
 if (service == null) return;
 
-await service.GetCloudCallAccuontsAsync();
-//await service.GetConfluenceSpacesAsync();
+//await service.GetCloudCallAccountsAsync();
+await service.GetConfluenceSpacesAsync();

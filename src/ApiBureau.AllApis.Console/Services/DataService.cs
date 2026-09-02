@@ -4,11 +4,11 @@ namespace ApiBureau.AllApis.Console.Services;
 
 public class DataService
 {
-    private readonly CloudCallClient _cloudCallClient;
-    private readonly ConfluenceClient _confluenceClient;
+    private readonly ICloudCallClient _cloudCallClient;
+    private readonly IConfluenceClient _confluenceClient;
     private readonly ILogger<DataService> _logger;
 
-    public DataService(CloudCallClient cloudCallClient, ConfluenceClient confluenceClient, ILogger<DataService> logger)
+    public DataService(ICloudCallClient cloudCallClient, IConfluenceClient confluenceClient, ILogger<DataService> logger)
     {
         _cloudCallClient = cloudCallClient;
         _confluenceClient = confluenceClient;
@@ -21,7 +21,7 @@ public class DataService
 
         _logger.LogInformation("Spaces: {Count}", spaces.Count);
 
-        var space = spaces.FirstOrDefault();
+        var space = spaces.FirstOrDefault(w => w.Id == "229503");
         if (space is null)
         {
             return;
@@ -32,7 +32,7 @@ public class DataService
         _logger.LogInformation("Pages in {SpaceName}: {Count}", space.Name, pages.Count);
     }
 
-    public async Task GetCloudCallAccuontsAsync()
+    public async Task GetCloudCallAccountsAsync()
     {
         var items = await _cloudCallClient.Accounts.GetAsync();
 
