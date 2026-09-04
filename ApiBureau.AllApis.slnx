@@ -5,6 +5,7 @@
   </Folder>
   <Folder Name="/Solution Items/">
     <File Path="../bullhorn-api/README.md" />
+    <File Path="../devyce-api/README.md" />
     <File Path="../emsi-api/README.md" />
     <File Path=".gitignore" />
     <File Path="README.md" />
