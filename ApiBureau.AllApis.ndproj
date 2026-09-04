@@ -9884,6 +9884,11 @@ where  propSetter != null &&
       !propSetter.IsPrivate && // Ignore private setters since this is private implementation detail
       !propSetter.ParentType.IsPrivate && // Ignore setters of private types
 
+       // DTO and response collections are data-contract members. Their setters
+       // are required for serializers and public object-initialization contracts.
+      !(propSetter.ParentType.SimpleName.EndsWith("Dto") ||
+        propSetter.ParentType.SimpleName.Contains("Response")) &&
+
        // Ignore properties of serializable types
       !propSetter.ParentType.TypesUsed.Any(t1 => t1.IsAttributeClass && t1.ParentNamespace.Name == "Newtonsoft.Json") &&
       !propSetter.ParentType.HasAttribute("System.Runtime.Serialization.DataContractAttribute".AllowNoMatch()) &&

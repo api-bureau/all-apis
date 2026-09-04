@@ -67,4 +67,8 @@ using System.Diagnostics.CodeAnalysis;
 // isolated and independently maintainable rather than nesting it in the HTTP client.
 [assembly: SuppressMessage("NDepend", "ND1803", Target = "ApiBureau.Bullhorn.Api:ApiBureau.Bullhorn.Api.Http.ApiSession", Justification = "A separate type preserves session encapsulation and testability.")]
 
+// isDeleted is an established mutable request-contract field. Replacing it with
+// a property or making it readonly would be a binary/source compatibility break.
+[assembly: SuppressMessage("NDepend", "ND1805", Target = "ApiBureau.Bullhorn.Api:ApiBureau.Bullhorn.Api.Dtos.SoftDeleteDto.isDeleted", Justification = "The field is part of the established mutable request DTO contract.")]
+
 [assembly: SuppressMessage("NDepend", "ND1701:PotentiallyDeadMethods", Target = "ApiBureau.Bullhorn.Browser:ApiBureau.Bullhorn.Browser.Pages.Index.GetData()", Justification = "TODO")]
