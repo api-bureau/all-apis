@@ -3474,7 +3474,8 @@ warnif count > 0 from n in Application.Namespaces where
 
   // Eliminate anonymous namespaces that contains
   // only notmycode types (like generated types). 
-  let childTypes = n.ChildTypes.Where(t => JustMyCode.Contains(t))
+  let childTypes = n.ChildTypes.Where(t =>
+     JustMyCode.Contains(t) && t.SourceFileDeclAvailable)
   where childTypes.Count() > 0
 select new { 
    n, 
@@ -5816,7 +5817,8 @@ select new {
 warnif count > 0
 // Filter procedure for types that shouldn't be considered as dead
 let canTypeBeConsideredAsDeadProc = new Func<IType, bool>(
-   t => !t.IsPublic && //   Public types might be used by client applications of your assemblies.
+   t => t.SourceFileDeclAvailable && // Source-less framework/compiler infrastructure cannot be application dead code.
+        !t.IsPublic && //   Public types might be used by client applications of your assemblies.
          t.Name != "Program" && 
         !t.IsGeneratedByCompiler &&
 
@@ -9667,6 +9669,7 @@ let reservedExceptions = ThirdParty.Types.WithFullNameIn(
    "System.DataMisalignedException")
 
 from m in Application.Methods.ThatCreateAny(reservedExceptions)
+where m.SourceFileDeclAvailable // Ignore source-less methods emitted by the compiler/framework.
 let reservedExceptionsCreated = reservedExceptions.Where(t => m.IsUsing(t))
 select new { 
    m,
@@ -10509,7 +10512,8 @@ select new {
 // To fix a violation of this rule, add a version number to the assembly 
 // by using the *System.Reflection.AssemblyVersionAttribute* attribute.
 //</HowToFix>]]></Query>
-        <Query Active="True" DisplayList="True" DisplayStat="False" DisplaySelectionView="False" IsCriticalRule="False"><![CDATA[// <Name>Assemblies should have the same version</Name>
+        <!-- The solution aggregates API packages that are versioned and deployed independently. -->
+        <Query Active="False" DisplayList="True" DisplayStat="False" DisplaySelectionView="False" IsCriticalRule="False"><![CDATA[// <Name>Assemblies should have the same version</Name>
 // <Id>ND2801:AssembliesShouldHaveTheSameVersion</Id>
 
 warnif count > 0
