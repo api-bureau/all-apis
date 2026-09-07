@@ -71,4 +71,55 @@ using System.Diagnostics.CodeAnalysis;
 // a property or making it readonly would be a binary/source compatibility break.
 [assembly: SuppressMessage("NDepend", "ND1805", Target = "ApiBureau.Bullhorn.Api:ApiBureau.Bullhorn.Api.Dtos.SoftDeleteDto.isDeleted", Justification = "The field is part of the established mutable request DTO contract.")]
 
+// RunAsync is a straightforward command dispatcher whose branches are already
+// described by command names and the generated help output.
+[assembly: SuppressMessage("NDepend", "ND1006", Scope = "method", Target = "ApiBureau.Confluence.Api.Console:ApiBureau.Confluence.Api.Console.Services.ConfluenceConsoleService", Justification = "Additional implementation comments would duplicate the self-describing command dispatch and help text.")]
+
+// These API changes belong to the previously reviewed Bullhorn transport and
+// endpoint-facade redesign. Compatibility shims would expose obsolete transport
+// details and duplicate every renamed endpoint member indefinitely.
+[assembly: SuppressMessage("NDepend", "ND1500", Target = "ApiBureau.Bullhorn.Api:ApiBureau.Bullhorn.Api.Http.ApiSession", Justification = "Session management is intentionally an internal transport detail.")]
+[assembly: SuppressMessage("NDepend", "ND1501", Scope = "method", Target = "ApiBureau.Bullhorn.Api:ApiBureau.Bullhorn.Api.BullhornClient", Justification = "The client API was intentionally redesigned around endpoint groups and an advanced client.")]
+[assembly: SuppressMessage("NDepend", "ND1501", Scope = "method", Target = "ApiBureau.Bullhorn.Api:ApiBureau.Bullhorn.Api.Interfaces.IBullhornClient", Justification = "The client interface intentionally uses plural endpoint group names.")]
+[assembly: SuppressMessage("NDepend", "ND1501", Scope = "method", Target = "ApiBureau.Bullhorn.Api:ApiBureau.Bullhorn.Api.Endpoints.AppointmentEndpoint", Justification = "The endpoint API was intentionally redesigned.")]
+[assembly: SuppressMessage("NDepend", "ND1501", Scope = "method", Target = "ApiBureau.Bullhorn.Api:ApiBureau.Bullhorn.Api.Endpoints.CandidateEndpoint", Justification = "The endpoint API was intentionally redesigned.")]
+[assembly: SuppressMessage("NDepend", "ND1501", Scope = "method", Target = "ApiBureau.Bullhorn.Api:ApiBureau.Bullhorn.Api.Endpoints.CandidateWorkHistoryEndpoint", Justification = "The endpoint API was intentionally redesigned.")]
+[assembly: SuppressMessage("NDepend", "ND1501", Scope = "method", Target = "ApiBureau.Bullhorn.Api:ApiBureau.Bullhorn.Api.Endpoints.ClientContactEndpoint", Justification = "The endpoint API was intentionally redesigned.")]
+[assembly: SuppressMessage("NDepend", "ND1501", Scope = "method", Target = "ApiBureau.Bullhorn.Api:ApiBureau.Bullhorn.Api.Endpoints.ClientCorporationEndpoint", Justification = "The endpoint API was intentionally redesigned.")]
+[assembly: SuppressMessage("NDepend", "ND1501", Scope = "method", Target = "ApiBureau.Bullhorn.Api:ApiBureau.Bullhorn.Api.Endpoints.CorporateUserEndpoint", Justification = "The endpoint API was intentionally redesigned.")]
+[assembly: SuppressMessage("NDepend", "ND1501", Scope = "method", Target = "ApiBureau.Bullhorn.Api:ApiBureau.Bullhorn.Api.Endpoints.CorporationDepartmentEndpoint", Justification = "The endpoint API was intentionally redesigned.")]
+[assembly: SuppressMessage("NDepend", "ND1501", Scope = "method", Target = "ApiBureau.Bullhorn.Api:ApiBureau.Bullhorn.Api.Endpoints.CountryEndpoint", Justification = "The endpoint API was intentionally redesigned.")]
+[assembly: SuppressMessage("NDepend", "ND1501", Scope = "method", Target = "ApiBureau.Bullhorn.Api:ApiBureau.Bullhorn.Api.Endpoints.DepartmentEndpoint", Justification = "The endpoint API was intentionally redesigned.")]
+[assembly: SuppressMessage("NDepend", "ND1501", Scope = "method", Target = "ApiBureau.Bullhorn.Api:ApiBureau.Bullhorn.Api.Endpoints.EntityEditHistoryEndpoint", Justification = "The endpoint API was intentionally redesigned.")]
+[assembly: SuppressMessage("NDepend", "ND1501", Scope = "method", Target = "ApiBureau.Bullhorn.Api:ApiBureau.Bullhorn.Api.Endpoints.EventEndpoint", Justification = "The endpoint API was intentionally redesigned.")]
+[assembly: SuppressMessage("NDepend", "ND1501", Scope = "method", Target = "ApiBureau.Bullhorn.Api:ApiBureau.Bullhorn.Api.Endpoints.FileAttachmentEndpoint", Justification = "The endpoint API was intentionally redesigned.")]
+[assembly: SuppressMessage("NDepend", "ND1501", Scope = "method", Target = "ApiBureau.Bullhorn.Api:ApiBureau.Bullhorn.Api.Endpoints.FileEndpoint", Justification = "The endpoint API was intentionally redesigned.")]
+[assembly: SuppressMessage("NDepend", "ND1501", Scope = "method", Target = "ApiBureau.Bullhorn.Api:ApiBureau.Bullhorn.Api.Endpoints.JobOrderEndpoint", Justification = "The endpoint API was intentionally redesigned.")]
+[assembly: SuppressMessage("NDepend", "ND1501", Scope = "method", Target = "ApiBureau.Bullhorn.Api:ApiBureau.Bullhorn.Api.Endpoints.JobSubmissionEndpoint", Justification = "The endpoint API was intentionally redesigned.")]
+[assembly: SuppressMessage("NDepend", "ND1501", Scope = "method", Target = "ApiBureau.Bullhorn.Api:ApiBureau.Bullhorn.Api.Endpoints.JobSubmissionHistoryEndpoint", Justification = "The endpoint API was intentionally redesigned.")]
+[assembly: SuppressMessage("NDepend", "ND1501", Scope = "method", Target = "ApiBureau.Bullhorn.Api:ApiBureau.Bullhorn.Api.Endpoints.MassUpdateEndpoint", Justification = "The endpoint API was intentionally redesigned.")]
+[assembly: SuppressMessage("NDepend", "ND1501", Scope = "method", Target = "ApiBureau.Bullhorn.Api:ApiBureau.Bullhorn.Api.Endpoints.NoteEndpoint", Justification = "The endpoint API was intentionally redesigned.")]
+[assembly: SuppressMessage("NDepend", "ND1501", Scope = "method", Target = "ApiBureau.Bullhorn.Api:ApiBureau.Bullhorn.Api.Endpoints.OpportunityEndpoint", Justification = "The endpoint API was intentionally redesigned.")]
+[assembly: SuppressMessage("NDepend", "ND1501", Scope = "method", Target = "ApiBureau.Bullhorn.Api:ApiBureau.Bullhorn.Api.Endpoints.PlacementChangeRequestEndpoint", Justification = "The endpoint API was intentionally redesigned.")]
+[assembly: SuppressMessage("NDepend", "ND1501", Scope = "method", Target = "ApiBureau.Bullhorn.Api:ApiBureau.Bullhorn.Api.Endpoints.PlacementCommissionEndpoint", Justification = "The endpoint API was intentionally redesigned.")]
+[assembly: SuppressMessage("NDepend", "ND1501", Scope = "method", Target = "ApiBureau.Bullhorn.Api:ApiBureau.Bullhorn.Api.Endpoints.PlacementEndpoint", Justification = "The endpoint API was intentionally redesigned.")]
+[assembly: SuppressMessage("NDepend", "ND1501", Scope = "method", Target = "ApiBureau.Bullhorn.Api:ApiBureau.Bullhorn.Api.Endpoints.QueryEndpointBase<T>", Justification = "The endpoint base API was intentionally redesigned.")]
+[assembly: SuppressMessage("NDepend", "ND1501", Scope = "method", Target = "ApiBureau.Bullhorn.Api:ApiBureau.Bullhorn.Api.Endpoints.ResumeEndpoint", Justification = "The endpoint API was intentionally redesigned.")]
+[assembly: SuppressMessage("NDepend", "ND1501", Scope = "method", Target = "ApiBureau.Bullhorn.Api:ApiBureau.Bullhorn.Api.Endpoints.SearchEndpointBase<T>", Justification = "The endpoint base API was intentionally redesigned.")]
+[assembly: SuppressMessage("NDepend", "ND1501", Scope = "method", Target = "ApiBureau.Bullhorn.Api:ApiBureau.Bullhorn.Api.Endpoints.SendoutEndpoint", Justification = "The endpoint API was intentionally redesigned.")]
+[assembly: SuppressMessage("NDepend", "ND1503", Target = "ApiBureau.Bullhorn.Api:ApiBureau.Bullhorn.Api.Interfaces.IBullhornClient", Justification = "The singular endpoint properties and raw query methods were intentionally replaced by plural groups and Advanced.")]
+
+// Devyce endpoints are created by DevyceClient so consumers always receive the
+// configured shared HTTP client. Public constructors would permit invalid clients.
+[assembly: SuppressMessage("NDepend", "ND1501", Target = "ApiBureau.Devyce.Api:ApiBureau.Devyce.Api.Endpoints.CallEndpoint", Justification = "Endpoint construction is intentionally controlled by DevyceClient.")]
+[assembly: SuppressMessage("NDepend", "ND1501", Scope = "method", Target = "ApiBureau.Devyce.Api:ApiBureau.Devyce.Api.Endpoints.CallEndpoint", Justification = "The constructor is internal to enforce configured client creation.")]
+[assembly: SuppressMessage("NDepend", "ND1501", Target = "ApiBureau.Devyce.Api:ApiBureau.Devyce.Api.Endpoints.ContactEndpoint", Justification = "Endpoint construction is intentionally controlled by DevyceClient.")]
+[assembly: SuppressMessage("NDepend", "ND1501", Scope = "method", Target = "ApiBureau.Devyce.Api:ApiBureau.Devyce.Api.Endpoints.ContactEndpoint", Justification = "The constructor is internal to enforce configured client creation.")]
+[assembly: SuppressMessage("NDepend", "ND1501", Target = "ApiBureau.Devyce.Api:ApiBureau.Devyce.Api.Endpoints.CrmSyncDetailsEndpoint", Justification = "Endpoint construction is intentionally controlled by DevyceClient.")]
+[assembly: SuppressMessage("NDepend", "ND1501", Scope = "method", Target = "ApiBureau.Devyce.Api:ApiBureau.Devyce.Api.Endpoints.CrmSyncDetailsEndpoint", Justification = "The constructor is internal to enforce configured client creation.")]
+[assembly: SuppressMessage("NDepend", "ND1501", Target = "ApiBureau.Devyce.Api:ApiBureau.Devyce.Api.Endpoints.TranscriptEndpoint", Justification = "Endpoint construction is intentionally controlled by DevyceClient.")]
+[assembly: SuppressMessage("NDepend", "ND1501", Scope = "method", Target = "ApiBureau.Devyce.Api:ApiBureau.Devyce.Api.Endpoints.TranscriptEndpoint", Justification = "The constructor is internal to enforce configured client creation.")]
+[assembly: SuppressMessage("NDepend", "ND1501", Target = "ApiBureau.Devyce.Api:ApiBureau.Devyce.Api.Endpoints.UserEndpoint", Justification = "Endpoint construction is intentionally controlled by DevyceClient.")]
+[assembly: SuppressMessage("NDepend", "ND1501", Scope = "method", Target = "ApiBureau.Devyce.Api:ApiBureau.Devyce.Api.Endpoints.UserEndpoint", Justification = "The constructor is internal to enforce configured client creation.")]
+
 [assembly: SuppressMessage("NDepend", "ND1701:PotentiallyDeadMethods", Target = "ApiBureau.Bullhorn.Browser:ApiBureau.Bullhorn.Browser.Pages.Index.GetData()", Justification = "TODO")]
