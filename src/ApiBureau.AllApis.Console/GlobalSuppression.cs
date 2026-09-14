@@ -66,6 +66,7 @@ using System.Diagnostics.CodeAnalysis;
 // ApiSession remains a separate internal type to keep authentication/session logic
 // isolated and independently maintainable rather than nesting it in the HTTP client.
 [assembly: SuppressMessage("NDepend", "ND1803", Target = "ApiBureau.Bullhorn.Api:ApiBureau.Bullhorn.Api.Http.ApiSession", Justification = "A separate type preserves session encapsulation and testability.")]
+[assembly: SuppressMessage("NDepend", "ND1803", Target = "ApiBureau.Bullhorn.Api:ApiBureau.Bullhorn.Api.Http.BullhornSessionManager", Justification = "Authentication coordination and credential ownership remain separate from HTTP request transport.")]
 
 // isDeleted is an established mutable request-contract field. Replacing it with
 // a property or making it readonly would be a binary/source compatibility break.
